@@ -22,7 +22,43 @@ body {
 }
 
 .alt__container {
-  max-width: 1200px;
+  max-width: 1210px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-right: 18px;
+    color: #222933;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+
+    &:last-child {
+      padding-right: 0;
+      &::after {
+      display: none;
+      }
+    }
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 6px;
+    }
+
+  }
+
+  &__link {
+    color: inherit;
+
+  }
 }
