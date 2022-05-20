@@ -44,8 +44,9 @@ body {
 
     &:last-child {
       padding-right: 0;
+
       &::after {
-      display: none;
+        display: none;
       }
     }
 
@@ -60,5 +61,30 @@ body {
   &__link {
     color: inherit;
 
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    padding: 12px 20px;
+    border: 1px solid #a3bbc8;
+    color: #243f4d;
+  }
+
+  &__link--active {
+    background-color: #a3bbc8;
+    color: #fff;
+    border: none;
+  }
+
+  .pagination__item+.pagination__item {
+    margin-left: 15px;
   }
 }

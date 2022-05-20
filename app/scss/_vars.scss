@@ -14,3 +14,11 @@
 }
 
 $footer:#7b7b7b;
+
+%input {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: 0 0 0 0;
+   position: absolute;
+}
