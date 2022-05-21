@@ -19,8 +19,17 @@ $('.filter-price__input').ionRangeSlider({
       $('.filter-price__to').text(data.to);
   },
   });
-  $(".filter-product__star").rateYo({
+  $('.filter-product__star ')
+  .rateYo({
     starWidth: "17px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true,
+    spacing: "5px"
+  });
+  $('.product-item__star')
+  .rateYo({
+    starWidth: "22px",
     normalFill: "#ccccce",
     ratedFill: "#ffc35b",
     readOnly: true,

@@ -1147,8 +1147,7 @@
   }
 
   &__filters {
-    width: 275px;
-    padding-right: 20px;
+    width: 270px;
   }
 }
 
@@ -1163,7 +1162,7 @@
     font-weight: 700;
     padding-right: 60px;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     text-transform: uppercase;
     display: inline-block;
 
@@ -1235,8 +1234,9 @@
     justify-content: space-between;
     align-items: center;
     color: #243f4d;
-    padding: 8px 22px 8px 10px;
+    padding: 6px 22px 6px 10px;
   }
+
 }
 
 .filter-price {
@@ -1343,10 +1343,97 @@
   }
 
   .product-item {
-    height: 400px;
+    height: 430px;
     width: 270px;
     margin-bottom: 35px;
+
+    &__price {
+      margin-bottom: 0;
+    }
   }
+
+}
+
+.product-item--list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 530px;
+  margin-left: 30px;
+
+  .product-item__img-box {
+    height: 530px;
+    min-width: 370px;
+    background-color: rgba(255, 255, 255, 0.96);
+    border: 2px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-item__images--list {
+    object-fit: cover;
+  }
+
+  .product-item__wrapper-box {
+    text-align: left;
+    padding: 80px 60px 70px 60px;
+    position: relative;
+  }
+
+  .product-item__list-rating {
+    width: 410px;
+  }
+
+  .list-title {
+    font-size: 40px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 22px;
+  }
+
+  .product-item__text {
+    color: #243f4d;
+  }
+
+  .product-item__price {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 35px;
+  }
+
+  .product-item__star {
+    margin-bottom: 30px;
+  }
+
+  .product-item__link-box {
+    transform: none;
+    position: absolute;
+    bottom: 70px;
+    right: 305px;
+  }
+
+  .product-item__link--line {
+    display: none;
+  }
+
+  .product-item__link {
+    margin-left: 10px;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    &:hover {
+      background-color: #a3bbc8;
+    }
+
+  }
+
 }
 
 
