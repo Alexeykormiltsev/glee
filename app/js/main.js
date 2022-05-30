@@ -7,6 +7,22 @@ $(function(){
        });
 });
 
+$('.product-slide__thumb').slick({
+  asNavFor: '.product-slide__big',
+  focusOnSelect: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  vertical: true,
+  draggable: false
+});
+$('.product-slide__big').slick({
+  asNavFor: '.product-slide__thumb',
+  draggable: false,
+  arrows: false,
+  fade: true
+});
+$('.select-style, .product-one__item-num').styler();
+
 $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
