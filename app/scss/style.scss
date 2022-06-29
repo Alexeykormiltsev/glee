@@ -1647,7 +1647,7 @@
 }
 
 .related {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
   &__title {
     @extend %rubik-700;
@@ -1665,11 +1665,16 @@
     justify-content: space-around;
   }
 
+  .product-item {
+    min-width: 270px;
+    height: 380px;
+  }
+
   .slick-dots {
     display: flex;
     position: absolute;
-    top: -70px;
-    right: 40px;
+    top: -100px;
+    right: 30px;
 
     li {
       margin: 0 10px;
@@ -1697,6 +1702,221 @@
     }
   }
 }
+
+.blog-page {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-right: 70px;
+    width: 830px;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__item-box {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__item-imglink {
+    display: block;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+
+  }
+
+  &__img {
+    max-width: 830px;
+    min-height: 501px;
+    object-fit: cover;
+  }
+
+  .blod-page__item-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 26px;
+    color: #333333;
+  }
+
+  .blod-page__item-text {
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+
+  .blog-page__item-link {
+    display: flex;
+    border: 1px solid #a3bbc8;
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    line-height: 12px;
+    color: #a3bbc8;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .blog-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 70px;
+    background-color: #a3bbc8;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &__date {
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-image: url('../images/icons/calendar.svg');
+        left: 0;
+        top: 7px;
+      }
+    }
+
+    &__autor {
+      margin-left: 20px;
+      display: block;
+      color: #fff;
+      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-image: url('../images/icons/user-blog.svg');
+        left: 0;
+        top: 7px;
+      }
+    }
+  }
+
+  &__aside {
+    width: 270px;
+
+    .blog-search {
+      margin-bottom: 50px;
+    }
+
+    .blog-search__form {
+      display: flex;
+      border: 1px solid #eef3f5;
+      border-radius: 5px;
+    }
+
+    .blog-search__input {
+      width: 220px;
+      height: 42px;
+      border: none;
+    }
+
+    .blog-search__btn {
+      width: 48px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: #edf1f4;
+    }
+  }
+
+  .recent-posts {
+    &__title {
+      color: #243f4d;
+      font-size: 18px;
+      font-weight: 700;
+      padding-right: 60px;
+      position: relative;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        width: 39px;
+        height: 3px;
+        background-color: #a3bbc8;
+        border-radius: 1px;
+        position: absolute;
+        right: 4px;
+        top: 12px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__img-link {
+      margin-right: 18px;
+      display: block;
+      min-width: 71px;
+    }
+
+    &__img {
+      width: 71px;
+      height: 71px;
+      object-fit: cover;
+    }
+
+    &__text-link {
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      display: block;
+    }
+
+    &__date {
+      font-size: 12px;
+      line-height: 30px;
+      color: #9a9a9a;
+      padding-left: 18px;
+      text-transform: uppercase;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-image: url(../images/icons/calendar-1.svg);
+        left: 0;
+        top: 7px;
+      }
+    }
+  }
+
+  .pagination-blog {
+    justify-content: start;
+    margin-top: 50px;
+  }
+}
+
+
 
 
 
