@@ -2211,6 +2211,185 @@
   }
 }
 
+.contact {
+  padding: 120px 0;
+  text-align: center;
+
+  &__text {
+    @extend %rubik-700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a3bbc8;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    @extend %rubik-700;
+    font-size: 35px;
+    color: #436372;
+    margin-bottom: 70px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    width: 370px;
+    padding: 60px 50px 70px;
+    background-color: #fbfbfb;
+
+    &:hover {
+      border: 2px solid #a3bbc8;
+      border-radius: 10px;
+      transition: all .5s ease;
+
+      .contact__item-link {
+        background-color: #a3bbc8;
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__item-link {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    border-radius: 20px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      width: 37px;
+      height: 45px;
+      top: 15px;
+      left: 21px;
+    }
+  }
+
+
+  &__item-title {
+    padding: 60px 0 20px;
+    @extend %rubik-700;
+    font-size: 20px;
+    color: #222222;
+  }
+
+  &__item-text {
+    color: #565872;
+  }
+
+  &__item-phone {
+    color: #565872;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 620px;
+    margin-right: 50px;
+  }
+
+  &__form-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 35px;
+    background-color: #fbfbfb;
+    color: #565872;
+    display: block;
+    border: none;
+  }
+
+  &__form-name {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/blog-user.svg);
+      width: 16px;
+      height: 16px;
+      right: 16px;
+      top: 16px;
+    }
+  }
+
+  &__form-email {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/blog-mail.svg);
+      width: 21px;
+      height: 15px;
+      right: 16px;
+      top: 16px;
+    }
+  }
+
+  &__form-textarea {
+    width: 100%;
+    min-height: 175px;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-top: 15px;
+    background-color: #fbfbfb;
+    color: #565872;
+    display: block;
+    border: none;
+    resize: none;
+
+  }
+
+  &__form-message {
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/blog-comment.svg);
+      width: 20px;
+      height: 16px;
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  &__form-btn {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+  }
+}
+
 
 
 
