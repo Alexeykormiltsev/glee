@@ -1,0 +1,24 @@
+%rubik-700 {
+   font-family: 'Rubik-Bold', sans-serif;
+   font-weight: 700;
+}
+
+%rubik-500 {
+   font-family: 'Rubik-Medium', sans-serif;
+   font-weight: 500;
+}
+
+%rubik-400 {
+   font-family: 'Rubik-Regular', sans-serif;
+   font-weight: 400;
+}
+
+$footer:#7b7b7b;
+
+%input {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: 0 0 0 0;
+   position: absolute;
+}
